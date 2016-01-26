@@ -20,7 +20,9 @@ $("#messageInput").keypress(function (e){
 		$("#messageInput").val("");
 	};
 });
-	var myDataRef = new Firebase('https://slq23ly5x95.firebaseio-demo.com/');
+myDataRef.on('child_added', function(snapshot) {
+  //We'll fill this in later.
+});
 </script>
 </body>
 </html>
